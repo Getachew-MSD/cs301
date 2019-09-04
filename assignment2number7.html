@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="UTF-8">
+    <title>Full Information</title>
+        <script>
+                function allInfo(){
+                    let firstName = document.getElementById("firstnameInputBox").value; 
+                    let lastName = document.getElementById("lastnameInputBox").value;
+                    let age = document.getElementById("ageInputBox").value;
+                    let gender = document.getElementById("genderInputBox").value;
+                    let study = document.getElementById("studyInputBox").value;
+                    let allInOne = firstName +" "+lastName +" " +age + " "+ gender +" " + study;
+        
+                     document.getElementById("outputDiv").innerHTML = allInOne;
+                    
+                }
+        </script>
+ </head>
+ <body>
+     <h1>Required Information</h1>
+     First Name <input type="text" id="firstnameInputBox"> <br>
+     Last Name <input type="text" id="lastnameInputBox"> <br>
+     Age <input type="text" id="ageInputBox"> <br>
+     Gender <input type="text" id="genderInputBox"> <br>
+     Field of Study <input type="text" id="studyInputBox"><br>
+     <button type="button" onclick="allInfo()">Submit</button>
+     <div id = "outputDiv"></div>
+     <br>
+     <textarea name="text"  rows="10" cols="30"></textarea>
+<p>Click the "Submit" button and the form-data will be sent to a page on the server</p>
+</body>
+</html>
